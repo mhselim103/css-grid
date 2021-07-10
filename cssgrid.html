@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        
+        .container{
+            display: grid;
+            /* grid-template-columns: 200px auto 200px; */
+            /* third row takes content wise auto space */
+            /* grid-template-rows: 300px 300px; */
+            /* grid-row-gap: 3px;
+            grid-column-gap: 3px; */
+            /* shortcut bellow for both column and rows row/column we can use repeat for more column */
+            /* grid-template-columns: 1fr 2fr;
+            grid-template-rows: 2fr 3fr; */
+            grid-template:2fr 3fr /1fr 2fr ;
+         grid-gap: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+
+    </div>
+</body>
+
+</html>

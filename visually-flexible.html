@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        .container {
+            height: 100%;
+            display: grid;
+            /* (becomes 6 column layout and its complex) */
+            /* grid-template-columns: 1fr 4fr;  */
+            /* nrml layout 12 clmn  */
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 50px 1fr 50px;
+            grid-template-areas: 
+            ". h h h h h h h h h h h"
+            "m m m c c c c c c c c c"
+            "f f f f f f f f f f f f"
+
+        }
+
+        .header {
+            grid-area: h;
+        }
+        .menu{
+            grid-area: m;
+        }
+
+        .content {
+            grid-area: c;
+        }
+        .footer{
+            grid-area: f;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>
